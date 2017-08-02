@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>LoginPage</title>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="boot/css/bootstrap.css" rel="stylesheet" />
+    <style type="text/css">
+        body{
+             background-image: url('images/mainBack.jpg');
+     height: 100vh;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover; 
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+     background-position: center center; 
+        }
+.shapesBackground {
+    background-image: url('images/shapes.jpg');
+     height: 100vh;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover; 
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+     background-position: center center; 
+    background-color: transparent;
+    top:0;
+    left:0;
+    margin: 0;
+}
+        
+        #overlay{
+            position: fixed; 
+            width: 100%;
+            height: 100%;
+            top: 0; 
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 1;
+        }
+        
+        .loginFrame{
+            position: inherit;
+            background-color: white;
+            z-index:999;
+            padding:20px;
+            border-radius: 20px;
+            top:0;
+            margin-top: -550px;
+            margin-left: 140px;
+            width: 400px; 
+            height: 450px;
+             box-shadow:   20px 20px 20px #000000;
+        }
+        
+        .loginFrame img{
+            width: 250px;
+            z-index: -3515; 
+        }
+        
+        .loginFrame label{
+            width: 300px;
+            margin-left: -40px;
+            font-size:18pt;
+            color:#734dad;
+        }
+        .loginFrame input{
+            width: 300px;
+            margin-left: 40px;
+        }
+        
+        form{
+            margin-top: -20px;
+            z-index:99999999;
+        }
+        
+        .radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+    position: absolute;
+    margin-top: -px;
+    margin-left: -370px;
+}
+        .form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 42px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+            box-shadow:   2px 2px 2px #000000;
+}
+        .btn {
+   background:    #9900ff;
+background:    -webkit-linear-gradient(#9900ff, #9900ff 50%, #9900ff 50%, #9900ff);
+background:    linear-gradient(#9900ff, #9900ff 50%, #9900ff 50%, #9900ff);
+border-radius: 5px;
+box-shadow:   5px 5px 5px #000000;
+padding:       8px 20px;
+color:         #ffffff;
+display:       inline-block;
+font:          normal 700 24px/1 "Calibri", sans-serif;
+text-align:    center;
+text-shadow:   1px 1px #000000;
+    border-radius: 26px;
+}
+        button{
+            background-color: #734dad;
+            coloR:white;
+            width:300px;
+            margin-left: -70px;
+            border-radius: 300px;
+        }
+
+</style>
+
+
+
+</head>
+<body>
+    <div class="shapesBackground" style="opacity:0.5;z-index:-9999;"></div>
+    <div id="overlay"></div>
+    <div class="row">
+        <div class="col-md-offset-6 col-md-6 text-center">
+           <div class="row ">
+                <div class="col-md-12">
+                    <div class="loginFrame">
+                     <img src="images/logo.png" alt="logo" />
+                <form class="form-horizontal">
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
+                
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+               
+                  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+              
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <div class="row checkbox">       
+                      <input type="checkbox"> <span style="margin-left:-200px;color:#734dad;font-weight:bolder;">Keep me logged in</span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn ">Login</button>
+                </div>
+              </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <div class="row checkbox">       
+                     <span style="margin-left:-260px;color:#734dad;font-weight:bolder;">Forgot Password?</span>
+                  </div>
+                </div>
+              </div>
+            </form>
+            </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
